@@ -51,11 +51,6 @@ const Resizable = ({ component: Component, content }) => {
       left = leftRef.current,
       right = rightRef.current;
 
-    console.log("Top : ",top)
-    console.log("Bottom : ", bottom)
-    console.log("Left : ", left)
-    console.log("Right : ", right)
-
     top.addEventListener("mousedown", mouseDownHandler);
     bottom.addEventListener("mousedown", mouseDownHandler);
     left.addEventListener("mousedown", mouseDownHandler);
