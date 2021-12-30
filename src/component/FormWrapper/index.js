@@ -10,7 +10,7 @@ const FormWrapper = () => {
     updateCount: 0,
   });
 
-  const apiDomain = process.env.BACKEND_URI
+  const apiDomain = process.env.REACT_APP_BACKEND_URI
 
   useEffect(()=>{
     axios.get(`${apiDomain}/fetch-count`).then(({ data })=>{
